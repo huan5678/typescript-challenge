@@ -10,5 +10,5 @@
 
 export function processMultiArray(arr: number[][]): number[][] {
   // 在此實現函式
-  return arr.map((subArr) => subArr.map((num) => num * 2));
+  return arr.map((row) => row.map((num) => num * 2));
 }

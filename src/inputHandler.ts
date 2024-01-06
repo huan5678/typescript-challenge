@@ -11,7 +11,7 @@
  * 輸出: 'Input is a number: 123'
  */
 
-export function handleInput(input: string | number) {
+export function handleInput<T>(input: T): string {
   // 在此實現函式
-  return typeof input === 'string' ? `Input is a string: ${input}` : `Input is a number: ${input}`;
+  return `Input is a ${typeof input}: ${input}`;
 }
